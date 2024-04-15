@@ -1,6 +1,6 @@
 {
   "name": "webgl-device-check",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "webgl device check",
   "main": "index.js",
   "type": "module",
