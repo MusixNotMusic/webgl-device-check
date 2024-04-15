@@ -71,13 +71,12 @@ export function checkWebGL1 () {
     const gl = canvas.getContext('webgl');
 
     if (gl) {
-        console.log(`%c======WebGL Device Check======`, 'background: #eee; color: #3f51b5' )
+        console.log(`%c======WebGL Device Check======`, 'color: #3f51b5' )
         console.log('%chttps://webgl2fundamentals.org/webgl/lessons/webgl-cross-platform-issues.html', 'color: #ccc' )
-        console.log('')
     
         WebGL.forEach(item => {
            const result = gl.getParameter(gl[item]);
-           console.log(`%c${item}: ${result}`, 'background: #eee; color: #ff5722' )
+           console.log(`%c${item}: ${result}`, 'color: #ff5722' )
         })
 
         console.log('')
@@ -91,13 +90,12 @@ export function checkWebGL2 () {
     const gl = canvas.getContext('webgl2');
 
     if (gl) {
-        console.log(`%c======WebGL2 Device Check======`, 'background: #eee; color: #3f51b5' )
+        console.log(`%c======WebGL2 Device Check======`, 'color: #3f51b5' )
         console.log('%chttps://webgl2fundamentals.org/webgl/lessons/webgl-cross-platform-issues.html', 'color: #ccc' )
-        console.log('' )
 
         WebGL2.forEach(item => {
             const result = gl.getParameter(gl[item]);
-            console.log(`%c${item}: ${result}`, 'background: #eee; color: #4CAF50' )
+            console.log(`%c${item}: ${result}`, 'color: #4CAF50' )
         })
         console.log('' )
     } else {
@@ -110,13 +108,12 @@ export function queryWebGLExtensions() {
     const gl = canvas.getContext('webgl2') || canvas.getContext('webgl');
 
     if (gl) {
-        console.log(`%c======WebGL Extentsions======`, 'background: #eee; color: #3f51b5' )
+        console.log(`%c======WebGL Extentsions======`, 'color: #3f51b5' )
         console.log('%chttps://developer.mozilla.org/zh-CN/docs/Web/API/WebGL_API/Using_Extensions#%E6%89%A9%E5%B1%95%E5%88%97%E8%A1%A8', 'color: #ccc' )
-        console.log('' )
 
         const available_extensions = gl.getSupportedExtensions();
         available_extensions.forEach(item => {
-            console.log(`%c${item}`, 'background: #eee; color: #2196f3' )
+            console.log(`%c${item}`, 'color: #2196f3' )
         })
         console.log('')
     } else {
