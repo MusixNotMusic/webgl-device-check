@@ -1,0 +1,29 @@
+{
+  "name": "webgl-device-check",
+  "version": "1.0.0",
+  "description": "webgl device check",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MusixNotMusic/webgl-device-check.git"
+  },
+  "keywords": [
+    "webgl",
+    "webgl2",
+    "device",
+    "check",
+    "texture",
+    "shader",
+    "browser"
+  ],
+  "author": "MusixNotMusic",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MusixNotMusic/webgl-device-check/issues"
+  },
+  "homepage": "https://github.com/MusixNotMusic/webgl-device-check#readme"
+}
